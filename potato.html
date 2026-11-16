@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag, drop, check</title>
+    <link rel="stylesheet" href="potato.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="potato.js" defer></script>
+</head>
+<body>
+    <p>Drag either item onto the target. It is looking for the watering can.</p>
+    <div id="items">
+        <!-- draggable lets the browser start dragging this element. -->
+        <div id="item-WateringCan" class="item" draggable="true">Watering Can</div>
+        <div id="item-Rake" class="item" draggable="true">Rake</div>
+    </div>
+    <div id="target">
+        <img src="potato.png">
+    </div>
+    <p id="result" aria-live="polite">Nothing done yet.</p>
+</body>
+</html>
